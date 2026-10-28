@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#F4B6C2">
+    <meta
+      name="description"
+      content="A small story about the things that are easier to say after a little thought."
+    >
+    <title>Nocturne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="story" id="story">
+      <section class="scene scene-opening is-active" data-scene aria-labelledby="opening-title">
+        <div class="opening-mark" aria-hidden="true">
+          <span class="mark-orbit"></span>
+          <span class="mark-core"></span>
+        </div>
+        <p class="eyebrow">A little after-hours story</p>
+        <h1 id="opening-title">Nocturne</h1>
+        <p class="opening-copy">Some things are easier to say when the world gets quiet.</p>
+        <button class="button button-primary opening-button" type="button" data-enter>
+          Step inside <span aria-hidden="true">↗</span>
+        </button>
+        <p class="opening-footnote">Take your time. There’s no rush.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="surface-title" hidden>
+        <p class="eyebrow">01 <span>·</span> The surface</p>
+        <h2 id="surface-title">Calm on the outside.<br><em>A lot going on underneath.</em></h2>
+        <p class="scene-copy">I can look pretty calm when we’re together. In my head, I’m overthinking every sentence before it makes it out so I become silent a lot.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="beginning-title" hidden>
+        <p class="eyebrow">02 <span>·</span> The beginning</p>
+        <h2 id="beginning-title">It started at the gym.</h2>
+        <p class="scene-copy">I started going on September 6, 2026. I met you on my fifth day there, and you caught my attention right away.</p>
+        <p class="scene-aside">That part was immediate. Getting to know you made it grow.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="little-things-title" hidden>
+        <p class="eyebrow">03 <span>·</span> The little things</p>
+        <h2 id="little-things-title">Then I got to know you.</h2>
+        <p class="scene-copy">Your laugh is really cute. You talk so sweetly, and you’re genuinely kind. Somehow, even when you’re nagging me, I end up liking you more.</p>
+        <div class="detail-line" aria-hidden="true"><span></span><span></span><span></span></div>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="caught-title" hidden>
+        <p class="eyebrow">04 <span>·</span> A small confession before the big one</p>
+        <h2 id="caught-title">There was that one time…</h2>
+        <p class="scene-copy">You were doing core exercises at the gym, and I was staring at you so much that you playfully told me to stop looking at you like that.</p>
+        <p class="scene-aside">That’s when I realised just how obvious my staring had become and how little I see others in the room compared to you.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="grew-title" hidden>
+        <p class="eyebrow">05 <span>·</span> It grew</p>
+        <h2 id="grew-title">I already liked you.<br><em>Then we kept talking.</em></h2>
+        <p class="scene-copy">I even spent time learning more about sportbikes than I did before because I felt a bit left out in the conversation and I wanted to understand more of what you like.</p>
+        <p class="scene-aside">I just wanted more things we could talk about.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="underneath-title" hidden>
+        <p class="eyebrow">06 <span>·</span> Beneath the calm</p>
+        <h2 id="underneath-title">I think more than I say.</h2>
+        <p class="scene-copy">I overthink what to say, how to say it, and whether I’ll sound stupid. Sometimes I hold back and say less than I wanted to.</p>
+        <p class="scene-aside">This is me trying to say it without getting stuck in my own head.</p>
+      </section>
+
+      <section class="scene" data-scene aria-labelledby="risk-title" hidden>
+        <p class="eyebrow">07 <span>·</span> The risk</p>
+        <h2 id="risk-title">You call me your gym bestie.</h2>
+        <p class="scene-copy">I really value that. I’ve worried that being honest could change something good between us — but keeping this to myself didn’t feel right either.</p>
+        <p class="scene-aside">For me, telling you the truth is worth the risk.</p>
+      </section>
+
+      <section class="scene scene-confession" data-scene aria-labelledby="confession-title" hidden>
+        <p class="eyebrow">08 <span>·</span> The honest part</p>
+        <h2 id="confession-title">Mimi, I have feelings for you.</h2>
+        <p class="scene-copy">They were there from the beginning, and they grew stronger the more we talked. I value what we have, and I hope you feel something too — but I’ll respect whatever you feel.</p>
+        <p class="scene-aside">You don’t owe me a particular answer. I just wanted you to know.</p>
+      </section>
+
+      <section class="scene scene-response" data-scene aria-labelledby="response-title" hidden>
+        <p class="eyebrow">09 <span>·</span> Your space</p>
+        <h2 id="response-title">If you want to say anything, you can leave it here.</h2>
+        <p class="scene-copy">You can write whatever’s on your mind, or leave this blank. There’s no need to answer now.</p>
+        <form class="response-form" id="response-form" data-formspree-endpoint="https://formspree.io/f/xlgpyzbe">
+          <label for="response">Your message <span>(optional)</span></label>
+          <textarea id="response" name="message" rows="5" autocomplete="off"></textarea>
+          <button class="button button-primary submit-button" type="submit">Send privately <span aria-hidden="true">↗</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <p class="form-note">Your message won’t appear on this website. Please avoid sharing anything you wouldn’t want sent through Formspree.</p>
+        </form>
+      </section>
+
+      <section class="scene scene-ending" data-scene aria-labelledby="ending-title" hidden>
+        <p class="eyebrow">Whenever you’re ready</p>
+        <h2 id="ending-title">Whatever your answer, I’m glad I told you.</h2>
+        <p class="scene-copy">I hope you feel something too. And whatever you feel, I genuinely hope we can still be friends. No rush to reply.</p>
+        <button class="button button-quiet" type="button" data-restart>Read it again <span aria-hidden="true">↺</span></button>
+      </section>
+
+      <nav class="story-controls" aria-label="Story navigation">
+        <button class="control-button" type="button" data-back aria-label="Previous chapter" hidden>← <span>Back</span></button>
+        <div class="progress" aria-label="Story progress">
+          <span class="progress-label" data-progress>Opening</span>
+          <span class="progress-track"><span class="progress-fill" data-progress-fill></span></span>
+        </div>
+        <button class="control-button" type="button" data-next aria-label="Next chapter" hidden><span>Continue</span> →</button>
+      </nav>
+    </main>
+  </body>
+</html>
